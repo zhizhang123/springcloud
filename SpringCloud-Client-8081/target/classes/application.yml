@@ -1,0 +1,2 @@
+server:  port: 8081spring:  application:    name: SpringCloud-Client
+eureka:  client:                                              #客户端注册进eureka服务列表内    service-url:      defaultZone: http://localhost:8080/eureka/

@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.cn.springcloud-test</groupId>
+  <artifactId>SpringCloud-test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+    <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+  
+  <dependencies>
+  	<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+        </dependency>
+
+  </dependencies>
+  <modules>
+  	<module>SpringCloud-Service-8080</module>
+  	<module>SpringCloud-Client-8081</module>
+  	<module>SpringCloud-Feign-8082</module>
+  	<module>SpringCloud-Client-8082</module>
+  	<module>SpringCloud-common</module>
+  	<module>SpringCloud-consomer-7001</module>
+  	<module>SpringCloud-consomer-7002</module>
+  	<module>SpringCloud-Zuul</module>
+  	<module>SpringCloud-Hystrix-Dashboard</module>
+  </modules>
+</project>
